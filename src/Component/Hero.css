@@ -36,6 +36,33 @@
     z-index: -1;
 }
 
+.hero-bar {
+    background: white;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 3px solid rgba(120, 120, 120, 0.374);
+    width: 100%;
+}
+
+.hero-bar>input {
+    border: none;
+    outline: none;
+}
+
+.stats{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.stat>:nth-child(1){
+    font-size: 2rem;
+}
+
+.stat>:nth-child(1)>:last-child{
+    color: orange;
+}
+
 .img-container {
     width: 30rem;
     height: 35rem;

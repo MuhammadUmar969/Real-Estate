@@ -4,6 +4,9 @@ import App from './App'
 import './index.css'
 import './Header.css'
 import './Component/Hero.css'
+import './Companies.css'
+import './Residencies.css'
+import './Value.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

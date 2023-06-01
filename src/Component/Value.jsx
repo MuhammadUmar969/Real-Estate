@@ -43,17 +43,21 @@ const Value = () => {
               preExpanded={[0]}>
                   {
                      data.map((item,i) => {
-                      const [className,setClassName] = useState(null)
-                       return(
-                        <AccordionItem className={`accordion-item${className}`} key={i} uuid={i}>
-                          <AccordionItemHeading>
-                            <AccordionItemButton className="flexCenter accordion-button">
+                      const [expanded, setExpanded] = useState(false)
 
-                            <AccordionItemState>
-                              {({expanded}) => expanded 
-                              ? setClassName("expanded") : setClassName("collapsed")}
-                            </AccordionItemState>
-                            
+                      const toggleAccordion = () => {
+                        setExpanded(!expanded);
+                      }
+
+                       return(
+                        <AccordionItem 
+                        className={`accordion-item${expanded ? "expanded" : "collapsed"}`} 
+                        key={i} uuid={i}>
+                          <AccordionItemHeading>
+                            <AccordionItemButton 
+                            className="flexCenter accordion-button"
+                            onClick={toggleAccordion}>
+
                               <div className="flexCenter icon">
                                 {item.icon}
                               </div>

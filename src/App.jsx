@@ -5,6 +5,9 @@ import './App.css'
 import Companies from './Component/Companies'
 import Residencies from './Component/Residencies'
 import Value from './Component/Value'
+import Contact from './Component/Contact'
+import GetStarted from './Component/GetStarted'
+import Footer from './Component/Footer'
 
 const App = () => {
   return (  
@@ -17,6 +20,9 @@ const App = () => {
          <Companies />
          <Residencies />
          <Value />
+         <Contact />
+         <GetStarted />
+         <Footer />
        </div>
   )
 }

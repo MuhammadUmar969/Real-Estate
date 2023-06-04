@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '/public/images/logo2.png'
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="paddings innerWidth flexCenter f-container">
             
             <div className="flexColStart f-left">
-              <img src="./public/images/logo2.png" alt="logo2" />
+              <img src={logo} alt="logo2" />
 
               <span className="secondaryText">
                Our vision is to make all people

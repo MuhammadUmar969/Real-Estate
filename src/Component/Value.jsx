@@ -10,6 +10,7 @@ import {
 import 'react-accessible-accordion/dist/fancy-example.css';
 import {MdOutlineArrowDropDown} from 'react-icons/md'
 import data from './Accordion'
+import value from '/public/images/value.png'
 
 const Value = () => {
   return (
@@ -18,7 +19,7 @@ const Value = () => {
         <div className="paddings innerWidth flexCenter v-container">
            <div className="v-left">
              <div className="img-container">
-               <img src="./public/images/value.png" alt="value" />
+               <img src={value} alt="value" />
              </div>
            </div>
 

@@ -2,6 +2,7 @@ import React from 'react'
 import {MdCall} from 'react-icons/md'
 import {BsFillChatDotsFill} from 'react-icons/bs'
 import {MdMessage} from 'react-icons/md'
+import contact from '/public/images/contact.jpg'
 
 const Contact = () => {
   return (
@@ -81,7 +82,7 @@ const Contact = () => {
 
             <div className="c-right">
               <div className="img-container">
-                <img src="./public/images/contact.jpg" alt="contact" />
+                <img src={contact} alt="contact" />
               </div>
             </div>
         </div>

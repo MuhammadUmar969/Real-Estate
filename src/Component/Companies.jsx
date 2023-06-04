@@ -1,16 +1,20 @@
 import React from 'react'
-
+import prologis from '/public/images/prologis.png'
+import tower from '/public/images/tower.png'
+import equinix from '/public/images/equinix.png'
+import realty from '/public/images/realty.png'
 const Companies = () => {
   return (
     <>
       <section className="c-wrapper">
-        <div className="paddings innerWidth flexCenter c-container">
-            <img src="./public/images/prologis.png" alt="prologis" />
-            <img src="./public/images/tower.png" alt="tower" />
-            <img src="./public/images/equinix.png" alt="equinix" />
-            <img src="./public/images/realty.png" alt="realty" />
+        <div className="paddings innerWidth flexCenter cm-container">
+            <img src={prologis} alt="prologis" />
+            <img src={tower} alt="tower" />
+            <img src={equinix} alt="equinix" />
+            <img src={realty} alt="realty" />
         </div>
       </section>
+
     </>
   )
 }

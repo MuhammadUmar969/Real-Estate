@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {BiMenuAltRight} from 'react-icons/bi'
+import logo from '/public/images/logo.png'
 
 const Header = () => {
 
@@ -15,7 +16,7 @@ const Header = () => {
     <>
       <section className="h-wrapper">
         <div className="flexCenter paddings innerWidth h-container">
-            <img src="./public/images/logo.png" alt="logo" width={100} />
+            <img src={logo} alt="logo" width={100} />
 
               <div className="flexCenter h-menu"
                style={getMenuStyles(menuOpened)}>
